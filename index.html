@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deividas' Portfolio Website</title>
+    <link rel="stylesheet" href="./Styles/about.css">
+    <link rel="stylesheet" href="./Styles/background.css">
+    <link rel="icon" type="image/x-icon" href="./assets/Pictures/Contacts/Cartoon_David.png">
+</head>
+
+
+<body>
+    <div id="vanta-bg">
+        <div class="gridLay">
+            <div class="mobile-nav">
+                <div class="hamburger" onclick="toggleMobileMenu()"><img src="./icons8-menu-100.png"></div>
+                <div class="mobile-menu" id="mobileMenu">
+                    <a href="./index.html" class="current underline">About</a>
+                    <a href="./Pages/project.html" class="underline">Projects</a>
+                    <a href="./Pages/contact.html" class="underline">Contact</a>
+                </div>
+            </div>
+            <div class="nav images">
+                <div class="resume">
+                    <a href="./assets/Documents/Deividas_Resume.pdf" target="_blank"><img src="./assets/Pictures/Common Icons/Resume.png"/></a>
+                    <p>Resume</p>
+                </div>
+                <div class="github">
+                    <a href="https://github.com/dilgunas20033" target="_blank"><img src="./assets/Pictures/Common Icons/Github.png"></a>
+                    <p>Github</p>
+                </div>
+                <div class="linkedIn">
+                    <a href="https://www.linkedin.com/in/dilgunas2003/" target="_blank"><img src="./assets/Pictures/Common Icons/Linkedin.png"/></a>
+                    <p>LinkedIn</p>
+                </div>
+            </div>
+            <div class="nav pages">
+                <a href="./index.html" class="current underline">About</a>
+                <a href="./Pages/project.html" class="underline">Projects</a>
+                <a href="./Pages/contact.html" class="underline">Contact</a>
+            </div>
+            <div class="text header">
+                <h1>I'm Deividas, a software engineering student</h1>
+            </div>
+            <div class="text paragraph">
+                <p>
+                    I'm a student at Florida Gulf Coast University with a passion for building engaging digital experiences. 
+                    I served as the Vice President of the Computer Science & Software Engineering Club, where I helped organize events that connected students with industry professionals and hands-on learning.
+                </p>
+                <p>
+                    I'm currently focused on becoming a full stack web developer, blending design and functionality to create user-friendly websites and applications. 
+                    Whether it's frontend design, backend logic, or anything in between, I'm always looking to learn, build, and grow in the world of tech.
+                </p>
+                <p>
+                    <strong>Technologies: </strong>
+                </p>
+                <div class="tech">
+                    <img src="./assets/Pictures/About/python.png" />
+                    <img src="./assets/Pictures/About/Cpp.png" />
+                    <img src="./assets/Pictures/About/HTML.png" />
+                    <img src="./assets/Pictures/About/CSS.png" />
+                    <img src="./assets/Pictures/About/Javascript.png" />
+                    <img src="./assets/Pictures/About/Figma.png" />
+                    <img src="./assets/Pictures/About/Canva.png" />
+                </div>
+            </div>
+            <div class="david">
+                <img src="./assets/Pictures/TEMP.png">
+            </div>
+        </div>
+    </div>
+    <script src="./Scripts/three.min.js"></script>
+    <script src="./Scripts/vanta.birds.min.js"></script>
+    <script src="./Scripts/script.js"></script>
+    <script>
+        function toggleMobileMenu() {
+            const menu = document.getElementById("mobileMenu");
+            menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+
+        }
+    </script>
+</body>
+</html>

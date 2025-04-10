@@ -1,0 +1,156 @@
+/* Basic Setup */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Grid Setup */
+
+.gridLay { 
+    display: grid;
+    grid-template-columns: 620px 1fr;
+    grid-template-rows: 75px 1fr 2fr;
+    height: 100vh;
+    text-decoration: none;
+    color: white; 
+}
+
+/* Navbar */
+
+.nav {
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white; 
+}
+
+.images {
+    display: flex;
+    align-items: center;
+    gap: 25px; 
+    margin-left: 40px;
+    grid-area: 1 / 1 / 2 / 2; 
+}
+
+.images img{
+    height: 30px;
+    width: 30px;
+}
+
+
+.github p,
+.linkedIn p,
+.resume p {
+    display: none;
+    margin: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    transform: translateY(25px);
+    pointer-events: none;
+}
+
+.github,
+.linkedIn,
+.resume {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    margin-top: 0;
+    padding: 0;
+}
+
+.github:hover p,
+.linkedIn:hover p,
+.resume:hover p {
+    display: block;
+    opacity: 1;
+}
+
+.pages {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 40px; 
+    grid-area: 1 / 2 / 2 / 3;
+    gap: 25px; 
+    text-decoration: none;
+    color: white; 
+    text-decoration: none;
+}
+
+.current {
+    font-weight: bold;
+} 
+
+.underline:hover {
+    text-decoration: underline;
+}
+
+/* Cartoon Picture */
+
+.image {
+    grid-area: 2 / 2 / 4 / 3; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.image img{ 
+    height: 650px; 
+    width: 650px; 
+}
+
+/* Textbox w/Pictures */
+
+.text {
+    grid-area: 2 / 1 / 4 / 3;
+    display: flex;
+    align-items: center;
+
+}
+
+.textBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    border-radius: 30px;
+    height: 615px;
+    width: 515px;
+    margin-left: 40px;
+    background-color: #3BBEE075;
+    border: #454545 solid 3px;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.textBox a{
+    text-decoration: none;
+    color: white; 
+}
+
+.icon {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin-left: 20px
+}
+
+.icon img{
+    height: 75px;
+    width: 75px;
+    color: black;
+}
+
+
