@@ -107,7 +107,7 @@ body, html {
 }
 
 .image img{ 
-    height: 650px; 
+    height: 650px auto; 
     width: 650px; 
 }
 
@@ -153,4 +153,87 @@ body, html {
     color: black;
 }
 
+.mobile-nav {
+    display: none;
+}
 
+@media screen and (max-width: 768px) {
+    .gridLay {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh; /* Ensure full height */
+        padding: 20px;
+    }
+
+    .images, .pages {
+        display: none;
+    }
+
+    .mobile-nav {
+        position: fixed;
+        top: 10px;
+        display: block;
+        right: 20px;
+        z-index: 999;
+    }
+
+    .hamburger {
+        font-size: 35px;
+        color: white;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .hamburger img{
+        height: 50px;
+        width: 50px;
+    }
+
+    .mobile-menu {
+        display: none;
+        position: absolute;
+        top: 45px; /* space below the hamburger */
+        right: 0;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 10px 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+        width: max-content;
+    }
+
+    .mobile-menu a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        margin: 8px 0;
+        text-align: right;
+    }
+
+    .mobile-menu a:hover {
+        text-decoration: underline;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .textBox {
+        margin: 0 auto;
+        width: 90%; /* Reduce width */
+        height: auto; /* Adjust height to content */
+        padding: 20px; /* Add some padding */
+    }
+
+    .icon img {
+        height: 50px; /* Reduce icon size */
+        width: 50px;
+    }
+
+    .icon p {
+        font-size: 30px; /* Reduce text size */
+    }
+
+}
