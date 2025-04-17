@@ -160,8 +160,12 @@ body, html {
         overflow: auto;
     }
 
-    .images, .pages {
+    .pages {
         display: none;
+    }
+
+    .images {
+        margin-right: 550px;
     }
 
     .mobile-nav {
