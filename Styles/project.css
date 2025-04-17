@@ -246,7 +246,7 @@ body, html {
     }
 
     .main-box {
-        height: 100vh;
+        height: 90vh;
         overflow: auto; 
         overflow-y: scroll;
     }
