@@ -13,7 +13,7 @@ body, html {
 .gridLay { 
     display: grid;
     grid-template-columns: 0.5fr 1fr;
-    grid-template-rows: 75px 1fr 1fr;
+    grid-template-rows: 75px 1fr 1fr 1fr;
     height: 100vh;
     text-decoration: none;
     color: white; 
@@ -109,12 +109,13 @@ body, html {
 .textBox {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 30px;
     background-color: #3BBEE075;
     border-radius: 10px;
     margin-left: 40px; 
     margin-right: 40px;
-    height: 300px;
+    height: 200px;
     width: 100%;
     border: #454545 solid 3px;
     box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.5);
@@ -124,10 +125,13 @@ body, html {
 /* Project Image */
 
 .textBox img {
-    height: 230px;
-    width: 475px;
+    width: 350px;
+    height: 170px;
+    object-fit: cover;
+    object-position: center;
     border-radius: 10px;
     margin-left: 20px;
+    flex-shrink: 0; /* Prevent image from shrinking */
 }
 
 /* Project Text */
@@ -135,14 +139,122 @@ body, html {
 .textBox p{ 
     font-size: 15px;
     margin-right: 20px;
+
 }
 
 .text p{
-    font-size: 15px;
+    font-size: 14px;
 }
 
 /* Link Color */
 
 .text a {
     color: #E3AA7F;
+}
+
+.scrollable-box {
+    width: 90%;
+    height: 190px; /* Define the height of the scrollable box */
+    overflow: auto; /* or overflow: scroll; */
+    overflow-y: scroll;
+  }
+
+  .mobile-nav {
+    display: none;
+}
+.group { 
+    grid-area: 2 / 1 / 5 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .gridLay {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh; /* Ensure full height */
+    }
+
+    .images, .pages {
+        display: none;
+    }
+
+    .mobile-nav {
+        position: fixed;
+        top: 10px;
+        display: block;
+        right: 20px;
+        z-index: 999;
+    }
+
+    .hamburger {
+        font-size: 35px;
+        color: white;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .hamburger img{
+        height: 50px;
+        width: 50px;
+    }
+
+    .mobile-menu {
+        display: none;
+        position: absolute;
+        top: 45px; /* space below the hamburger */
+        right: 0;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.9);
+        padding: 10px 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+        width: max-content;
+    }
+
+    .mobile-menu a {
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+        margin: 8px 0;
+        text-align: right;
+    }
+
+    .mobile-menu a:hover {
+        text-decoration: underline;
+    }
+    
+    .textBox img {
+        width: 175px;
+        height: 150px;
+    }
+
+    .textBox {
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .textBox p{
+        font-size: 12px;
+    }
+
+    
+    .scrollable-box {
+        height: 170px; /* Define the height of the scrollable box */
+        overflow: auto; /* or overflow: scroll; */
+        overflow-y: scroll;
+      }
+
+      .group {
+        margin-top: 60px 
+      }
+
+
 }
