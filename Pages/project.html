@@ -12,6 +12,14 @@
 <body>
     <div id="vanta-bg">
         <div class="gridLay">
+            <div class="mobile-nav">
+                <div class="hamburger" onclick="toggleMobileMenu()"><img src="../icons8-menu-100.png"></div>
+                <div class="mobile-menu" id="mobileMenu">
+                    <a href="../index.html" class="underline">About</a>
+                    <a href="./project.html" class="current underline">Projects</a>
+                    <a href="./contact.html" class="underline">Contact</a>
+                </div>
+            </div>
             <div class="nav images">
                 <div class="resume">
                     <a href="../assets/Documents/Deividas_Resume.pdf" target="_blank"><img src="../assets/Pictures/Common Icons/Resume.png"/></a>
@@ -31,61 +39,86 @@
                 <a href="./project.html" class="current underline">Projects</a>
                 <a href="./contact.html" class="underline">Contact</a>
             </div>
-            <div class="project">
-                <div class="textBox left">
-                    <img src="../assets/Pictures/Projects/WealthwiseAI.png" />
-                    <div class="text">
-                        <p>
-                            A mobile app that tracks your personal spending with an AI right by your side! 
-                            We targeted students and young adults to help them understand the importance of their finances and how to save better.
-                            WealthWise AI offers a wide range of topics to guide smart financial decisions and features an AI chatbot that gives personalized advice based on your spending habits. 
-                            It can even answer questions like “What was my biggest expense this month?”
-                        </p>
-                        <p> 
-                            Out of <strong>over 250</strong> projects, this one placed in the <strong>Top 20</strong> at Florida's largest Hackathon, ShellHacks. 
-                            This project was built with only 36-hours.
-                            I worked on the front-end using React Native and Expo, helping design a clean, simple, and user-friendly UI with vibrant orange buttons placed within thumbs' reach.
-                            I also contributed to the backend by testing API endpoints using Postman and helping build core functionalities. 
-                        </p>
-                        <p>
-                            <strong>Technologies used:</strong> React Native, Expo, JavaScript, Node.js, Postman, and Figma.
-                        </p>
-                        <p>
-                            For more information 
-                            <a href="https://github.com/dilgunas20033/WealthWise_AI" target="_blank">
-                                Click Here!
-                            </a>
-                        </p>
+            
+
+            <div class="group main-box">
+                <div class="project ">
+                    <div class="textBox">
+                        <img src="../assets/Pictures/Projects/NeoEden.jpg" />
+                        <div class="text scrollable-box">
+                            <p>
+                                NeoEden is an off-grid AI survival app designed for post-apocalyptic environments. 
+                                It features a live resource map, AI image analysis using Google Gemini, and a location-based news feed to help users stay informed, find clean water, avoid danger zones, and identify unknown objects or plants by snapping a photo. 
+                                The app is built for communities to collaborate and rebuild using real-time, AI-assisted tools.
+                            </p>
+                            <p> 
+                                Built in under 24 hours at Hackabull 2025, I worked on the frontend using React Native and Expo, implementing navigation, screen layouts, and camera functionality. 
+                                Our goal was to create a functional and intuitive survival companion that works even when the world doesn't.
+                            </p>
+                            <p>
+                                <strong>Technologies used:</strong> React Native, Expo, JavaScript, Node.js, Postman, and Figma.
+                            </p>
+                            <p>
+                                For more information 
+                                <a href="https://github.com/dilgunas20033/NeoEden" target="_blank">
+                                    Click Here!
+                                </a>
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="project">
-                <div class="textBox right">
-                    <img src="../assets/Pictures/Projects/Web_Tech.jpg" />
-
-                    <div class="text">
-                        
-                        <p>
-                            A personal website built to showcase my projects, experiences, and passions in tech and design. 
-                            With a smooth layout and a modern aesthetic, this site was designed to reflect both personality and professionalism while staying accessible and easy to navigate.
-                        </p>
-                        <p> 
-                            I designed the layout using Canva and developed the site with HTML and CSS. 
-                            For the background, I integrated a JavaScript animation using a pre-built template to give the site a modern, dynamic feel. 
-                            While the website is currently optimized for laptop screens only, it serves as a clean and professional space to highlight who I am and what I do.
-                        </p>
-                        <p>
-                            (Note: Optimization for other device coming very soon!)
-                        </p>
-                        <p>
-                            <strong>Technologies used:</strong> HTML, CSS, JavaScript (template), and Canva.
-                        </p>
-                        <p>
-                            For more information 
-                            <a href="https://github.com/dilgunas20033/Personal_Website" target="_blank">
-                                Click Here!
-                            </a>
-                        </p>
+                <div class="project ">
+                    <div class="textBox">
+                        <img src="../assets/Pictures/Projects/Web_Tech.jpg" />
+                        <div class="text scrollable-box">
+                            
+                            <p>
+                                A personal website built to showcase my projects, experiences, and passions in tech and design. 
+                                With a smooth layout and a modern aesthetic, this site was designed to reflect both personality and professionalism while staying accessible and easy to navigate.
+                            </p>
+                            <p> 
+                                I designed the layout using Canva and developed the site with HTML and CSS. 
+                                For the background, I integrated a JavaScript animation using a pre-built template to give the site a modern, dynamic feel. 
+                                While the website is currently optimized for laptop screens only, it serves as a clean and professional space to highlight who I am and what I do.
+                            </p>
+                            <p>
+                                <strong>Technologies used:</strong> HTML, CSS, JavaScript (template), and Canva.
+                            </p>
+                            <p>
+                                For more information 
+                                <a href="https://github.com/dilgunas20033/Personal_Website" target="_blank">
+                                    Click Here!
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="textBox">
+                        <img src="../assets/Pictures/Projects/WealthwiseAI.png" />
+                        <div class="text scrollable-box">
+                            <p>
+                                A mobile app that tracks your personal spending with an AI right by your side! 
+                                We targeted students and young adults to help them understand the importance of their finances and how to save better.
+                                WealthWise AI offers a wide range of topics to guide smart financial decisions and features an AI chatbot that gives personalized advice based on your spending habits. 
+                                It can even answer questions like “What was my biggest expense this month?”
+                            </p>
+                            <p> 
+                                Out of <strong>over 250</strong> projects, this one placed in the <strong>Top 20</strong> at Florida's largest Hackathon, ShellHacks. 
+                                This project was built with only 36-hours.
+                                I worked on the front-end using React Native and Expo, helping design a clean, simple, and user-friendly UI with vibrant orange buttons placed within thumbs' reach.
+                                I also contributed to the backend by testing API endpoints using Postman and helping build core functionalities. 
+                            </p>
+                            <p>
+                                <strong>Technologies used:</strong> React Native, Expo, JavaScript, Node.js, Postman, and Figma.
+                            </p>
+                            <p>
+                                For more information 
+                                <a href="https://github.com/dilgunas20033/WealthWise_AI" target="_blank">
+                                    Click Here!
+                                </a>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
