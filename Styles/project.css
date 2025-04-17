@@ -245,11 +245,7 @@ body, html {
         font-size: 12px;
     }
 
-    .main-box {
-        height: 90vh;
-        overflow: auto; 
-        overflow-y: scroll;
-    }
+   
 
     .scrollable-box {
         height: 170px; /* Define the height of the scrollable box */
@@ -258,9 +254,11 @@ body, html {
       }
 
       .group {
-        margin-top: 60px;
-        display: block
+        margin-top: 50px;
+        height: 95vh;
+        gap: 10px;
+        display: block;
+        overflow: auto; 
+        overflow-y: scroll;
       }
-
-
 }
